@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class mainPage extends StatelessWidget {
+  const mainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
             child: ElevatedButton(
               style: objButton,
               onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => simpleForm()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => homePage()));
               },
               child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 30),),),),
         ],
