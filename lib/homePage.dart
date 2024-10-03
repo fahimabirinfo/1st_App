@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/aboutUs.dart';
 import 'package:myapp/main.dart';
 
-class simpleForm extends StatelessWidget {
-  const simpleForm({super.key});
+class homePage extends StatelessWidget {
+  const homePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,17 +16,19 @@ class simpleForm extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text('HomePage',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text('This is Dhaka Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
-            Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9I1H7tKDwnL90xZLfow41GiSm-Daukoe0NQ&s'),
-            Text('This is Sylhet Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
-            Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODKbeaC8_oKiSRjnc-jqWs1PDzYODW6Umqw&s'),
-            Text('This is chittogong Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
-            Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVFSiJa2P8Qp1sMx2wgrP69odf1dQyYs6BA&s'),
-          ],
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text('This is Dhaka Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
+              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9I1H7tKDwnL90xZLfow41GiSm-Daukoe0NQ&s'),
+              Text('This is Sylhet Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
+              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODKbeaC8_oKiSRjnc-jqWs1PDzYODW6Umqw&s'),
+              Text('This is chittogong Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
+              Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVFSiJa2P8Qp1sMx2wgrP69odf1dQyYs6BA&s'),
+            ],
+          ),
         ),
       ),
     drawer: Drawer(
@@ -45,7 +47,7 @@ class simpleForm extends StatelessWidget {
     leading: Icon(Icons.home),
     title: Text('Home'),
     onTap: (){
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) => simpleForm()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => homePage()));
     },
     ),
     ListTile(
@@ -74,7 +76,7 @@ class simpleForm extends StatelessWidget {
      leading: Icon(Icons.logout),
      title: Text('Logout'),
      onTap: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => mainPage()));
     },
      ),
       ],
