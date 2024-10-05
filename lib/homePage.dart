@@ -29,6 +29,10 @@ class homePage extends StatelessWidget {
               Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSODKbeaC8_oKiSRjnc-jqWs1PDzYODW6Umqw&s'),
               Text('This is chittogong Map',style: TextStyle(color: Colors.green,fontSize: 30,fontWeight: FontWeight.bold),),
               Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVFSiJa2P8Qp1sMx2wgrP69odf1dQyYs6BA&s'),
+              SizedBox(
+                height: 30,
+              ),
+              Image.asset('images/abir.png'),
             ],
           ),
         ),
