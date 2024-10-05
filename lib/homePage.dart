@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/aboutUs.dart';
+import 'package:myapp/logInPage.dart';
 import 'package:myapp/main.dart';
+import 'package:myapp/profilePage.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});
@@ -35,10 +37,9 @@ class homePage extends StatelessWidget {
     child: ListView(
     children: [
     DrawerHeader(child: UserAccountsDrawerHeader(
-    accountName: Text('Salman Bin Muqtadir'),
+    accountName: Text('Fahim Islam Abir'),
     accountEmail: Text('salmantbf@gmail.com'),
-    decoration: BoxDecoration(
-    ),
+      currentAccountPicture: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyutvmWmPe3MmsIWoloSo3JRk5nJf1S5wkg&s'),
     ),
     padding: EdgeInsets.all(0),
     decoration: BoxDecoration(color: Colors.green),
@@ -53,7 +54,9 @@ class homePage extends StatelessWidget {
     ListTile(
     leading: Icon(Icons.home),
     title: Text('Profile'),
-    onTap: (){},
+    onTap: (){
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => profilePage()));
+    },
     ),
     ListTile(
     leading: Icon(Icons.home),
@@ -76,7 +79,7 @@ class homePage extends StatelessWidget {
      leading: Icon(Icons.logout),
      title: Text('Logout'),
      onTap: (){
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) => mainPage()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => logInPage()));
     },
      ),
       ],

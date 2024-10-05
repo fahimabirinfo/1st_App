@@ -42,15 +42,51 @@ class aboutUs extends StatelessWidget {
                   ),
                 ),
             SizedBox(
-              height: 20,
+              height: 50,
             ),
             Center(
               child: Text('Contract Information',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
             ),
             SizedBox(
-              height: 40,
+              height: 30,
             ),
-            Text('Website'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+              Text('Website:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+              Text('www.flutter.com',style: TextStyle(fontSize: 25),),
+            ],
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text('Email:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                Text('abira3314@gmail.com',style: TextStyle(fontSize: 25),),
+              ],
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text('Phone Number:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                Text('01704638325',style: TextStyle(fontSize: 25),),
+              ],
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text('Social Media:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+                Text('Fahim Islam Abir',style: TextStyle(fontSize: 25),),
+              ],
+            ),
           ],
         ),
       ),
