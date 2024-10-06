@@ -4,6 +4,7 @@ import 'homePage.dart';
 import 'aboutUs.dart';
 import 'profilePage.dart';
 import 'logInPage.dart';
+import 'homePage.dart';
 
 void main (){
   runApp(MyApp());
@@ -15,9 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: profilePage(),
+      home: homePage(),
     );
   }
 }
+
+
+
 
 

@@ -8,7 +8,7 @@ class aboutUs extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('About Us',style: TextStyle(color: Colors.white,fontSize: 40),),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blue,
         iconTheme: IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
@@ -30,7 +30,7 @@ class aboutUs extends StatelessWidget {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
