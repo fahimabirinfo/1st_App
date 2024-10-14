@@ -7,7 +7,9 @@ class page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About Us',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.blue,
+        title: Text('About Us',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.white),),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -52,7 +54,6 @@ class page1 extends StatelessWidget {
                 Icon(Icons.location_on,size: 30,),
                 SizedBox(width: 20,),
                 Text('D-6/a, Mirpur-12, Dhaka-1216',style: TextStyle(fontSize: 20),),
-                //hello world
               ],
             ),
           ],

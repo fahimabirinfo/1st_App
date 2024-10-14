@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/page1.dart';
 import 'package:myapp/page2.dart';
+import 'package:myapp/page3.dart';
 
 class aboutUs extends StatelessWidget {
   const aboutUs({super.key});
@@ -107,7 +108,9 @@ class aboutUs extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             GestureDetector(
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => page3()));
+              },
               child: Container(
                 height: 80,
                 width: double.infinity,
@@ -157,7 +160,6 @@ class aboutUs extends StatelessWidget {
                     Icon(Icons.policy,size: 40,color: Colors.green,),
                     SizedBox(width: 20,),
                     Text('Terms and Conditions',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                    //hello world
                   ],
                 ),
               ),

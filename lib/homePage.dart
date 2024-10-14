@@ -163,7 +163,6 @@ class homePage extends StatelessWidget {
           }
           if(index == 2){
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => aboutUs()));
-
           }
         },
       ),

@@ -7,7 +7,9 @@ class page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Privacy Policy',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.blue,
+        title: Text('Privacy Policy',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.white),),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -37,7 +39,6 @@ class page2 extends StatelessWidget {
                   '"Personal Information" Refers to any personally identifiable information that We may collect from You.'
                   '"Third Parties" - Refers to any website, company, or individual apart from the user and the creator of the Website.',style: TextStyle(fontSize: 20),),
             ),
-            //hello world
           ],
         ),
       ),
