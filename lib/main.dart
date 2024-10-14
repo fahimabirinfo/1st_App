@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/page1.dart';
+import 'package:myapp/page2.dart';
 import 'homePage.dart';
 import 'aboutUs.dart';
 import 'profilePage.dart';

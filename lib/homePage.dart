@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/aboutUs.dart';
 import 'package:myapp/logInPage.dart';
 import 'package:myapp/main.dart';
+import 'package:myapp/page2.dart';
 import 'package:myapp/profilePage.dart';
 
 class homePage extends StatelessWidget {
@@ -93,9 +94,11 @@ class homePage extends StatelessWidget {
     onTap: (){},
     ),
     ListTile(
-    leading: Icon(Icons.security,size: 30,),
+    leading: Icon(Icons.lock,size: 30,),
     title: Text('Privacy & Security',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-    onTap: (){},
+    onTap: (){
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => page2()));
+    },
     ),
     ListTile(
      leading: Icon(Icons.info,size: 30,),
@@ -159,6 +162,7 @@ class homePage extends StatelessWidget {
           }
           if(index == 2){
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => aboutUs()));
+
           }
         },
       ),

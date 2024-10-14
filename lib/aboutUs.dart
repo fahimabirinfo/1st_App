@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page1.dart';
+import 'package:myapp/page2.dart';
 
 class aboutUs extends StatelessWidget {
   const aboutUs({super.key});
@@ -15,77 +17,149 @@ class aboutUs extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Container(
-              child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_F3YkMk97r-wIzKyo6AJGL-ALAmp9NgJ-g&s', fit: BoxFit.cover,),
-              height: 300,
-              width: double.infinity,
-              color: Colors.blue,
-              ),
-                // SizedBox(
-                //   height: 20,
-                // ),
-                Container(
-                  //color: Colors.blue,
-                  height: 100,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Colors.blue,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      IconButton(onPressed: (){}, icon: Icon(Icons.call,size: 80,color: Colors.white,),),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.message,size: 80,color: Colors.white,),),
-                      IconButton(onPressed: (){}, icon: Icon(Icons.mail,size: 80,color: Colors.white,),),
-                    ],
-                  ),
+            SizedBox(height: 50,),
+            GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => page1()));
+              },
+              child: Container(
+                height: 80,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0,5),
+                    )
+                  ],
                 ),
-            SizedBox(
-              height: 50,
+                child: Row(
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(Icons.info,size: 40,color: Colors.yellow,),
+                    SizedBox(width: 20,),
+                    Text('About Us',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
             ),
-            Center(
-              child: Text('Contract Information',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){},
+              child: Container(
+                height: 80,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(Icons.question_mark,size: 40,color: Colors.blue,),
+                    SizedBox(width: 20,),
+                    Text('FAQ',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
             ),
-            SizedBox(
-              height: 30,
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => page2()));
+              },
+              child: Container(
+                height: 80,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(Icons.lock,size: 40,color: Colors.green,),
+                    SizedBox(width: 20,),
+                    Text('Privacy Policy',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-              Text('Website:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-              Text('www.flutter.com',style: TextStyle(fontSize: 25),),
-            ],
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){},
+              child: Container(
+                height: 80,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(Icons.autorenew,size: 40,color: Colors.black,),
+                    SizedBox(width: 20,),
+                    Text('Refund Policy',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
             ),
-            SizedBox(
-              height: 15,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text('Email:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                Text('abira3314@gmail.com',style: TextStyle(fontSize: 25),),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text('Phone Number:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                Text('01704638325',style: TextStyle(fontSize: 25),),
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Text('Social Media:',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
-                Text('Fahim Islam Abir',style: TextStyle(fontSize: 25),),
-              ],
+            SizedBox(height: 20,),
+            GestureDetector(
+              onTap: (){},
+              child: Container(
+                height: 80,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    SizedBox(width: 30,),
+                    Icon(Icons.policy,size: 40,color: Colors.green,),
+                    SizedBox(width: 20,),
+                    Text('Terms and Conditions',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                  ],
+                ),
+              ),
             ),
           ],
         ),

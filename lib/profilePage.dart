@@ -9,6 +9,7 @@ class profilePage extends StatelessWidget {
 
     String n = 'followers';
     String w = 'following';
+
     //var schoolName = Text('Gazipur Cadet Academy',style: TextStyle(fontWeight: FontWeight.bold),);
 
     return Scaffold(
