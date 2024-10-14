@@ -52,6 +52,7 @@ class page1 extends StatelessWidget {
                 Icon(Icons.location_on,size: 30,),
                 SizedBox(width: 20,),
                 Text('D-6/a, Mirpur-12, Dhaka-1216',style: TextStyle(fontSize: 20),),
+                //hello world
               ],
             ),
           ],

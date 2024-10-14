@@ -152,6 +152,7 @@ class homePage extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.home,),label: 'Home'),
         BottomNavigationBarItem(icon: Icon(Icons.person),label: 'Profile'),
         BottomNavigationBarItem(icon: Icon(Icons.info),label: 'About Us'),
+          //hello world
       ],
         onTap: (int index){
           if(index == 0){

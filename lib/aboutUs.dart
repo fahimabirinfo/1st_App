@@ -157,6 +157,7 @@ class aboutUs extends StatelessWidget {
                     Icon(Icons.policy,size: 40,color: Colors.green,),
                     SizedBox(width: 20,),
                     Text('Terms and Conditions',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    //hello world
                   ],
                 ),
               ),

@@ -37,6 +37,7 @@ class page2 extends StatelessWidget {
                   '"Personal Information" Refers to any personally identifiable information that We may collect from You.'
                   '"Third Parties" - Refers to any website, company, or individual apart from the user and the creator of the Website.',style: TextStyle(fontSize: 20),),
             ),
+            //hello world
           ],
         ),
       ),
