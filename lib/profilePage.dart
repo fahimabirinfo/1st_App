@@ -139,7 +139,6 @@ class profilePage extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Text('https://github.com/fahimabirinfo',style: TextStyle(fontSize: 18),),
                       ),
-                      //hello world
                     ],
                   ),
                 ],
